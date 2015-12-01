@@ -1,0 +1,24 @@
+
+<p>
+  <strong>Title:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @item.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @item.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @item.quantity %>
+</p>
+
+<%= link_to 'Update', edit_item_path%>
+<%= link_to 'Delete', item_path, method: :delete %>
+<%= link_to 'Home', items_path %>

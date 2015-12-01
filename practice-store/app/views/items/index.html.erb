@@ -1,0 +1,17 @@
+<h1>Listing All Items</h1>
+
+<%= link_to 'Add New Item', new_item_path %>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Description</th>
+  </tr>
+
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= link_to item.name, item %> </td>
+      <td><%= item.description %></td>
+    </tr>
+  <% end %>
+</table>
